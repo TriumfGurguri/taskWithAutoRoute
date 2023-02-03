@@ -105,7 +105,7 @@ class _ValidationCodeState extends State<ValidationCode> {
                   size: 25,
                 ),
                 onPressed: () {
-                  context.router.pushNamed('/');
+                  context.router.popUntilRoot();
                 })
           ],
         ),
