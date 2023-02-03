@@ -17,7 +17,7 @@ class _ValidationCodeState extends State<ValidationCode> {
       backgroundColor: Colors.grey[400],
       body: Center(
         child: Column(
-          mainAxisAlignment: MainAxisAlignment.start,
+          mainAxisAlignment: MainAxisAlignment.center,
           children: [
             Text('Validation Code Screen',
                 style: GoogleFonts.lato(

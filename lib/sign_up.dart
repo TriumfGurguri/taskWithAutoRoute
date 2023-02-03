@@ -1,14 +1,20 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:auto_route/auto_route.dart';
+import 'package:task1/routes/app_router.gr.dart';
 import 'package:task1/second_screen.dart';
-import 'package:task1/routes/router.gr.dart';
-import 'package:task1/routes/router.dart';
+
+import 'package:task1/routes/app_router.dart';
 import 'package:auto_route/auto_route.dart';
 
-class SignUpScreen extends StatelessWidget {
+class SignUpScreen extends StatefulWidget {
   const SignUpScreen({super.key});
 
+  @override
+  State<SignUpScreen> createState() => _SignUpScreenState();
+}
+
+class _SignUpScreenState extends State<SignUpScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -77,7 +83,8 @@ class SignUpScreen extends StatelessWidget {
                     size: 25,
                   ),
                   onPressed: () {
-                    context.router.pushNamed('/second-screen');
+                    // context.router.push(ValidationCode());
+                    context.router.pushNamed('second-screen');
                   }),
             ],
           ),

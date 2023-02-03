@@ -33,7 +33,7 @@ class AppRouter extends _i4.RootStackRouter {
     SecondScreen.name: (routeData) {
       return _i4.MaterialPageX<dynamic>(
         routeData: routeData,
-        child: _i2.SecondScreen(),
+        child: const _i2.SecondScreen(),
       );
     },
     ValidationCode.name: (routeData) {
@@ -52,11 +52,11 @@ class AppRouter extends _i4.RootStackRouter {
         ),
         _i4.RouteConfig(
           SecondScreen.name,
-          path: '/second-screen',
+          path: 'second-screen',
         ),
         _i4.RouteConfig(
           ValidationCode.name,
-          path: '/validation-code',
+          path: 'verification-screen',
         ),
       ];
 }
@@ -79,7 +79,7 @@ class SecondScreen extends _i4.PageRouteInfo<void> {
   const SecondScreen()
       : super(
           SecondScreen.name,
-          path: '/second-screen',
+          path: 'second-screen',
         );
 
   static const String name = 'SecondScreen';
@@ -91,7 +91,7 @@ class ValidationCode extends _i4.PageRouteInfo<void> {
   const ValidationCode()
       : super(
           ValidationCode.name,
-          path: '/validation-code',
+          path: 'verification-screen',
         );
 
   static const String name = 'ValidationCode';

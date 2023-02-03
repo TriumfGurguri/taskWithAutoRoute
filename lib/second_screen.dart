@@ -3,6 +3,7 @@ import 'package:google_fonts/google_fonts.dart';
 import 'package:auto_route/auto_route.dart';
 
 class SecondScreen extends StatefulWidget {
+  const SecondScreen({super.key});
   @override
   State<SecondScreen> createState() => _SecondScreenState();
 }
@@ -77,7 +78,7 @@ class _SecondScreenState extends State<SecondScreen> {
                     size: 25,
                   ),
                   onPressed: () {
-                    context.router.pushNamed('//validation-code');
+                    context.router.pushNamed('verification-screen');
                   })
             ],
           ),
